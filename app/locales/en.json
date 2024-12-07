@@ -1,0 +1,23 @@
+{
+  "seo": {
+    "name": "XingNuxt - Starter",
+    "description": "All-in-one & good-to-go template for Nuxt developers."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "template": {
+    "you_clicked": "You've clicked",
+    "time": "time",
+    "times": "times",
+    "browse_more": "Browse more",
+    "template": "template",
+    "on": "on Nidexingg.",
+    "whats_included": "What's included?",
+    "hey": "Hey",
+    "phd": "What's your name?",
+    "source": "Source code available on"
+  }
+}

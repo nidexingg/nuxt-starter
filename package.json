@@ -1,0 +1,52 @@
+{
+  "name": "xingnuxt-starter",
+  "version": "0.1.0",
+  "description": "This is a full function starter pack for beginner that utilize various of standard technologies out of the box. Made with ❤️ by Nidexingg",
+  "author": "Chandara H. Wei",
+  "license": "MIT",
+  "homepage": "https://xing-nuxt-starter.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nidexingg/nuxt-starter.git"
+  },
+  "bugs": "https://github.com/nidexingg/nuxt-starter/issues",
+  "keywords": [
+    "template",
+    "starter",
+    "vue",
+    "nuxt",
+    "nuxt-i18n",
+    "nuxt-content",
+    "nuxt-color-mode"
+  ],
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/content": "2.13.4",
+    "@nuxt/fonts": "0.10.3",
+    "@nuxt/image": "1.8.1",
+    "@nuxtjs/color-mode": "3.5.2",
+    "@nuxtjs/i18n": "9.1.1",
+    "@nuxtjs/tailwindcss": "6.12.2",
+    "@vite-pwa/nuxt": "0.10.6",
+    "nuxt": "^3.14.1592",
+    "nuxt-og-image": "^4.0.0",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue-sonner": "^1.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^3.4.16"
+  }
+}
