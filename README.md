@@ -1,4 +1,4 @@
-![hero](https//xing-nuxt-starter.vercel.app/og-image.png)
+![hero](https://xing-nuxt-starter.vercel.app/og-image.png)
 
 # Nuxt Starter Template
 
