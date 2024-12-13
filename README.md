@@ -5,9 +5,36 @@
 [![built with nuxt][nuxt-src]][nuxt-href]
 [![License][license-src]][license-href]
 
-Welcome to the Nuxt Starter Template by Nidexingg! This template is minimalistic designed to help developers quickly set up a Nuxt.js project with essential technologies and tools to meet the standard and implement required features. Below is a list of the technologies included in this template, along with their descriptions and links for more information.
+Welcome to the Nuxt Starter Template by Nidexingg! This template is minimalistic designed to help developers quickly set up a Nuxt.js project with essential technologies and tools to meet the standard and implement required features.
 
-## Technologies
+## Installation
+Run one of these commands to install the template using your favorite package manager.
+```bash
+npx nuxi@latest init <your-project-name> -t github:nidexingg/nuxt-starter#release
+bun x nuxi@latest init <your-project-name> -t github:nidexingg/nuxt-starter#release
+pnpm dlx nuxi@latest init <your-project-name> -t github:nidexingg/nuxt-starter#release
+yarn dlx nuxi@latest init <your-project-name> -t github:nidexingg/nuxt-starter#release
+```
+```bash
+cd <your-project-name>
+```
+### Dependency installation
+```bash
+npm i
+bun i
+pnpm i
+yarn i
+```
+### Start development server
+```bash
+npm run dev -- -o
+bun run dev -o # To use the Bun runtime during development, "bun --bun run dev -o"
+pnpm dev -o
+yarn dev --open
+```
+and 💥 booooom, `http://localhost:3000` should be automatically opened in your default browser.
+
+## Utilized technologies
 
 ### @nuxt/image
 
@@ -57,33 +84,12 @@ A UI component library that provides reusable components to speed up the develop
 
 - **Learn more**: [@nidexingg/ui](https://ui.nidexingg.com/)
 
-## Getting Started
+## Contribution
 
-To get started with this template, clone the repository and install the dependencies:
-
-### Guide
-
-Follow this guide to start your awesome journey.
-
-### Clone this repo or Download as zip
-
-```bash
-git clone https://github.com/nidexingg/nuxt-starter.git
-```
-
-### Dependency installation
-
-In this project, Bun is the default package manager. But if it's not your preference, delete the `bun.lockb` and replace `bun` with your favorite package manager.
-
-```bash
-bun install
-```
-
-### Start development server
-
-```bash
-bun run dev -o
-```
+- **Fork** this repository.
+- **Clone** your forked repository and make changes.
+- **Commit** and **Push** the update to your forked repository.
+- In the main page of your forked repository, click **Contribute** button and **Open pull request**.
 
 ## License
 
