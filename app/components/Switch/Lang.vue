@@ -38,7 +38,7 @@ onMounted(() => {
     <XingIcon name="material-symbols:translate" class="me-1 dark:text-white" />
     <select
       v-bind:value="localeIdentity"
-      class="bg-white dark:bg-black text-black dark:text-white outline-none"
+      class="outline-none"
       :style="{ width: `${switchWidth}px` }"
       @change="changeLocale"
     >
@@ -52,10 +52,19 @@ onMounted(() => {
     </select>
   </div>
 
-  <div class="absolute top-0 pointer-events-none">
+  <div class="pointer-events-none absolute top-0">
     <!-- dummy select to get the width of the select based on the selected item -->
     <select ref="switchWidthRef" style="visibility: hidden">
       <option>{{ localeMap[locale] }}</option>
     </select>
   </div>
 </template>
+<style scoped>
+select {
+  background: transparent;
+}
+option {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+</style>

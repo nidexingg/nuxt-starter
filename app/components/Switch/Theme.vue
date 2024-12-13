@@ -10,13 +10,19 @@ const { t } = useI18n();
       class="mr-1"
     />
     <XingIcon v-else name="ph:moon-duotone" class="mr-1" />
-    <select
-      v-model="$colorMode.preference"
-      class="bg-white dark:bg-black text-black dark:text-white outline-none"
-    >
+    <select v-model="$colorMode.preference" class="outline-none">
       <option value="system">{{ t("theme.system") }}</option>
       <option value="light">{{ t("theme.light") }}</option>
       <option value="dark">{{ t("theme.dark") }}</option>
     </select>
   </div>
 </template>
+<style scoped>
+select {
+  background: transparent;
+}
+option {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+</style>

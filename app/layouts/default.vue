@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex h-screen items-center justify-center bg-white text-black dark:bg-black dark:text-white"
-  >
+  <div class="bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
     <slot />
   </div>
 </template>

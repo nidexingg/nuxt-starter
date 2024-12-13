@@ -48,10 +48,17 @@ export default defineNuxtConfig({
     layoutTransition: { name: "fade", mode: "out-in" },
   },
   content: {}, //https://content.nuxt.com/get-started/configuration
-  fonts: {}, //https://fonts.nuxt.com/get-started/configuration
+  fonts: {
+    //https://fonts.nuxt.com/get-started/configuration
+    families: [
+      { name: "Inter", provider: "google" },
+      { name: "Kantumruy Pro", provider: "google" },
+    ],
+  },
   tailwindcss: {
-    cssPath: "~/assets/css/tailwind.css",
-  }, //https://tailwindcss.nuxtjs.org/getting-started/configuration
+    //https://tailwindcss.nuxtjs.org/getting-started/configuration
+    cssPath: "~/assets/css/main.css",
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -66,7 +73,7 @@ export default defineNuxtConfig({
     vueI18n: "./i18n.config.ts",
     strategy: "prefix_and_default",
     defaultLocale: "en",
-    pages: {},
+    pages: {}, //set a list of pages you don't want them to be translated.
     locales: [
       {
         code: "en",
@@ -88,9 +95,9 @@ export default defineNuxtConfig({
     manifest: {
       name: "Nuxt Starter Template by Nidexingg",
       short_name: "XingNuxt",
-      theme_color: "#000000",
+      theme_color: "hsl(var(--background))",
       start_url: "/",
-      background_color: "#000000",
+      background_color: "hsl(var(--background))",
       display: "standalone",
       scope: "/",
       description: "Install XingNuxt PWA on your homescreen.",
@@ -116,8 +123,11 @@ export default defineNuxtConfig({
     },
   },
   image: {
-    format: ["webp"],
+    // https://image.nuxt.com/get-started/configuration
+    domains: [], // list all the domain of image cloud providers to optimize.
+    format: ["avif"],
     screens: {},
+    quality: 100, // set the percentage of your image quality
   },
   vue: {
     compilerOptions: {
