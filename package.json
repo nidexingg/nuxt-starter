@@ -1,6 +1,6 @@
 {
   "name": "xingnuxt-starter",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "This is a full function starter pack for beginner that utilize various of standard technologies out of the box. Made with ❤️ by Nidexingg",
   "author": "Chandara H. Wei",
   "license": "MIT",
@@ -30,13 +30,12 @@
   },
   "dependencies": {
     "@nuxt/content": "2.13.4",
-    "@nuxt/fonts": "0.10.3",
     "@nuxt/image": "1.8.1",
     "@nuxtjs/color-mode": "3.5.2",
     "@nuxtjs/i18n": "9.1.1",
     "@nuxtjs/tailwindcss": "6.12.2",
     "@vite-pwa/nuxt": "0.10.6",
-    "nuxt": "^3.14.1592",
+    "nuxt": "^3.15.2",
     "nuxt-og-image": "^4.0.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",

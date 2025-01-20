@@ -84,6 +84,16 @@ A UI component library that provides reusable components to speed up the develop
 
 - **Learn more**: [@nidexingg/ui](https://ui.nidexingg.com/)
 
+### Renovate Bot
+
+Renovate Bot, developed by Mend.io, is a leading cross-platform dependency automation tool that has garnered widespread adoption among major tech companies. Organizations such as Nuxt, Prisma, Netlify, Envoy, Condé Nast, Microsoft, Atlassian, Sourcegraph, Mozilla, Deloitte, Telus, Yarn, HashiCorp, Automattic, Algolia, eBay, Cypress, Red Hat, Financial Times, Uber, Buildkite and a lot more.
+
+In this project, `renovate.json` is set to default with no configuration but there's another file called `renovate-example.json` to show some config examples of the bot.
+
+To activate the bot, you will have to install the bot from [GitHub App](https://github.com/apps/renovate) and allow its access to your repo.
+
+- **Learn more**: Visit Renovate Bot's [Documention](https://docs.renovatebot.com/).
+
 ## Contribution
 
 - **Fork** this repository.
