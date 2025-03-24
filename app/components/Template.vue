@@ -4,6 +4,8 @@ const count = ref(0);
 const { t } = useI18n();
 const appConfig = useAppConfig();
 const user = ref();
+const localStorageKey = "my_app_count";
+
 function selectRandomUsername() {
   const randomIndex = Math.floor(Math.random() * items.length);
   user.value = items[randomIndex];
@@ -11,15 +13,14 @@ function selectRandomUsername() {
 
 onMounted(() => {
   selectRandomUsername();
+  const storedCount = localStorage.getItem(localStorageKey);
+  if (storedCount) {
+    count.value = parseInt(storedCount, 10);
+  }
 });
 
-useSeoMeta({
-  title: t("seo.name"),
-  ogTitle: t("seo.name"),
-  description: t("seo.description"),
-  ogDescription: t("seo.description"),
-  ogImage: appConfig.ogImage,
-  twitterCard: "summary_large_image",
+watch(count, (newCount) => {
+  localStorage.setItem(localStorageKey, newCount.toString());
 });
 
 interface Tech {

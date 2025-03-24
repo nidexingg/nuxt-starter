@@ -16,9 +16,8 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_SITE_URL,
-      siteName: process.env.NUXT_SITE_NAME,
-      formSubmitUrl: process.env.NUXT_FORMSUBMIT_URL,
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL,
+      siteName: process.env.NUXT_PUBLIC_SITE_NAME,
     },
     private: {}, //declare your private and sensitive credentials here
   },
@@ -27,12 +26,12 @@ export default defineNuxtConfig({
     head: {
       title: "Nuxt Starter",
       charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1.0",
+      viewport: "width=device-width, initial-scale=1.0", // add `maximum-scale=1.0, user-scalable=0` if you don't want user to zoom in/out
       meta: [],
       link: [],
       script: [
         {
-          src: "https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js",
+          src: "https://cdn.jsdelivr.net/npm/iconify-icon@latest/dist/iconify-icon.min.js",
           type: "text/javascript",
         },
       ],
