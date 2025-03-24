@@ -95,7 +95,7 @@ A UI component library that provides reusable components to speed up the develop
 
 MIT
 
-[license-src]: https://img.shields.io/github/license/nidexingg/nuxt-starter.svg?style=flat&colorA=18181b&colorB=18181b
+[license-src]: https://img.shields.io/github/license/nidexingg/nuxt-starter?style=plastic&logo=nuxt&labelColor=%23000000&color=%23000000
 [license-href]: https://github.com/nidexingg/nuxt-starter/blob/master/LICENSE
 [nuxt-src]: https://img.shields.io/badge/Built%20With%20Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com/
