@@ -1,0 +1,27 @@
+{
+  "welcome": "Your Organic and Minimal Nuxt Starter Template",
+  "home": {
+    "hello": "Hello",
+    "clicked": "You clicked:",
+    "time": "time",
+    "times": "times",
+    "tech_used": "What's included?",
+    "desc1": "Have you ever been frustrated by reinstalling your favorite modules and starter packages?",
+    "desc2": "Here it is — a perfect starter for your amazing journey on your new project!",
+    "more": "and more...",
+    "source_code": "Source code available on",
+    "download": "or download latest build",
+    "here": "here"
+  },
+  "theme": {
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "sepia": "Sepia"
+  },
+  "404": {
+    "desc": "Sorry, we couldn’t find the page you’re looking for.",
+    "back": "Go back",
+    "back_home": "Go back home"
+  }
+}

@@ -38,7 +38,7 @@ This Code of Conduct applies both within project spaces and in public spaces whe
 
 ## Enforcement Procedures
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project maintainers at <a href="mailto:hi@nidexingg.com">hi@nidexingg.com</a>. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project maintainers at <a href="mailto:name@example.com">**your_email_here**</a>. All complaints will be reviewed and investigated promptly and fairly.
 
 All project maintainers are obligated to respect the privacy and security of the reporter of any incident.
 
