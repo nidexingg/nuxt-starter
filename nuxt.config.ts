@@ -1,30 +1,14 @@
 export default defineNuxtConfig({
-  future: {
-    compatibilityVersion: 4,
-  },
-  compatibilityDate: "2024-11-01",
+  compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: [
-    "@nuxt/content",
-    "@nuxt/image",
-    "@nuxt/fonts",
-    "@nuxtjs/color-mode",
-    "@vite-pwa/nuxt",
-    "@nuxtjs/i18n",
-    "@nuxtjs/tailwindcss",
-    "nuxt-og-image",
-  ],
   runtimeConfig: {
-    public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL,
-      siteName: process.env.NUXT_PUBLIC_SITE_NAME,
-    },
+    public: {}, //declare your public credentials here
     private: {}, //declare your private and sensitive credentials here
   },
+  modules: ['@nuxtjs/tailwindcss', '@vite-pwa/nuxt', '@nuxt/image', '@nuxtjs/i18n', "@nuxtjs/color-mode"],
   css: ["~/assets/css/main.css"],
   app: {
     head: {
-      title: "Nuxt Starter",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1.0", // add `maximum-scale=1.0, user-scalable=0` if you don't want user to zoom in/out
       meta: [],
@@ -43,94 +27,46 @@ export default defineNuxtConfig({
         class: "",
       },
     },
-    pageTransition: { name: "fade", mode: "out-in" },
-    layoutTransition: { name: "fade", mode: "out-in" },
-  },
-  content: {}, //https://content.nuxt.com/get-started/configuration
-  fonts: {
-    //https://fonts.nuxt.com/get-started/configuration
-    families: [
-      { name: "Inter", provider: "google" },
-      { name: "Kantumruy Pro", provider: "google" },
-    ],
-  },
-  tailwindcss: {
-    //https://tailwindcss.nuxtjs.org/getting-started/configuration
-    cssPath: "~/assets/css/main.css",
-  },
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
-  site: {
-    url: process.env.NUXT_SITE_URL || "https://nidexingg.com/",
-    name: "Nuxt Starter Template by Nidexingg",
-  },
-  i18n: {
-    vueI18n: "./i18n.config.ts",
-    strategy: "prefix_and_default",
-    defaultLocale: "en",
-    pages: {}, //set a list of pages you don't want them to be translated.
-    locales: [
-      {
-        code: "en",
-        language: "en-US",
-        isCatchallLocale: true,
-      },
-      {
-        code: "km",
-        language: "km-KH",
-      },
-    ],
+    // check out transitions here: https://nuxt.com/docs/4.x/getting-started/transitions
+    // pageTransition: {},
+    // layoutTransition: {},
   },
   colorMode: {
-    classSuffix: "",
+    classSuffix: "", // optional, prevents adding "-mode" to body class
     preference: "system",
-    fallback: "light",
+    fallback: "",
   },
-  pwa: {
+  i18n: {
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'km', name: 'ខេមរភាសា', file: 'km.json' },
+      { code: 'zh', name: '中文', file: 'zh.json' },
+      { code: 'fr', name: 'Francais', file: 'fr.json' },
+    ],
+    // Disabling automatic locale detection
+    detectBrowserLanguage: false,
+  },
+  pwa: { 
+    // More customs: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference
+    registerType: "autoUpdate",
     manifest: {
-      name: "Nuxt Starter Template by Nidexingg",
-      short_name: "XingNuxt",
-      theme_color: "hsl(var(--background))",
+      name: "",
+      short_name: "",
+      theme_color: "",
       start_url: "/",
-      background_color: "hsl(var(--background))",
+      background_color: "",
       display: "standalone",
       scope: "/",
-      description: "Install XingNuxt PWA on your homescreen.",
-      icons: [
-        {
-          src: "https://cloud.nidexingg.com/pwaicons/xingfolio/192.png",
-          sizes: "192x192",
-          type: "image/png",
-        },
-        {
-          src: "https://cloud.nidexingg.com/pwaicons/xingfolio/512.png",
-          sizes: "512x512",
-          type: "image/png",
-        },
-        {
-          src: "https://cloud.nidexingg.com/pwaicons/xingfolio/512.png",
-          sizes: "512x512",
-          type: "image/png",
-          purpose: "any maskable",
-        },
-        // add more sizes as you wish
-      ],
+      description: "",
+      icons: [],
+      screenshots: [],
     },
   },
-  image: {
-    // https://image.nuxt.com/get-started/configuration
-    domains: [], // list all the domain of image cloud providers to optimize.
-    format: ["avif"],
-    screens: {},
-    quality: 100, // set the percentage of your image quality
-  },
+  // comment or delete this section if you don't use icon from nidexingg/ui
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => tag === "iconify-icon",
     },
   },
-});
+})

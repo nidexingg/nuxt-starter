@@ -1,0 +1,27 @@
+{
+  "welcome": "Votre modèle de démarrage Nuxt organique et minimal",
+  "home": {
+    "hello": "Bonjour",
+    "clicked": "Vous avez cliqué :",
+    "time": "fois",
+    "times": "fois",
+    "tech_used": "Qu'est-ce qui est inclus ?",
+    "desc1": "Avez-vous déjà été frustré de réinstaller vos modules et packages préférés ?",
+    "desc2": "Le voici — le modèle parfait pour commencer votre merveilleux nouveau projet !",
+    "more": "et plus encore...",
+    "source_code": "Code source disponible sur",
+    "download": "ou téléchargez la dernière version",
+    "here": "ici"
+  },
+  "theme": {
+    "system": "Système",
+    "light": "Clair",
+    "dark": "Sombre",
+    "sepia": "Sépia"
+  },
+  "404": {
+    "desc": "Désolé, nous n’avons pas trouvé la page que vous recherchez.",
+    "back": "Retour",
+    "back_home": "Retour à l’accueil"
+  }
+}
