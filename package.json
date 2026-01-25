@@ -1,6 +1,6 @@
 {
   "name": "xingnuxt-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a lightweight, starter-friendly and ready to use starter pack for beginner that utilize various of standard technologies such as TailwindCSS with Prettier, Nuxt SEO, Dark mode, Internationalization and PWA supporting out of the box. Made with ❤️ by Nidexingg",
   "author": "Chandara H. Wei",
   "license": "MIT",
@@ -34,8 +34,8 @@
     "@nuxtjs/i18n": "^10.2.1",
     "@nuxtjs/tailwindcss": "6.14.0",
     "@vite-pwa/nuxt": "1.1.0",
-    "nuxt": "^4.2.2",
-    "vue": "^3.5.26",
+    "nuxt": "^4.3.0",
+    "vue": "^3.5.27",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
