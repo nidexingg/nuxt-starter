@@ -11,10 +11,10 @@ Welcome to the Nuxt Starter Template by Nidexingg! This template is minimalistic
 ## Installation
 Run one of these commands to install the template using your favorite package manager.
 ```bash
-npx nuxi@latest init <your-project-name> -t github:nidexingg/nuxt-starter#release
-bun x nuxi@latest init <your-project-name> -t github:nidexingg/nuxt-starter#release
-pnpm dlx nuxi@latest init <your-project-name> -t github:nidexingg/nuxt-starter#release
-yarn dlx nuxi@latest init <your-project-name> -t github:nidexingg/nuxt-starter#release
+npx nuxi@latest init -t github:nidexingg/nuxt-starter#release <your-project-name>
+bun x nuxi@latest init -t github:nidexingg/nuxt-starter#release <your-project-name>
+pnpm dlx nuxi@latest init -t github:nidexingg/nuxt-starter#release <your-project-name>
+yarn dlx nuxi@latest init -t github:nidexingg/nuxt-starter#release <your-project-name>
 ```
 ```bash
 cd <your-project-name>
