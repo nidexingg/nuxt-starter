@@ -84,8 +84,8 @@ function changeLocale(event: Event) {
       <strong>{{ $t("home.tech_used") }}</strong>
       <p>
         <span v-for="(link, index) in links" :key="link.name">
-          <a :href="link.url" target="_blank" rel="noopener noreferrer">
-            {{ link.name }} </a
+          <NuxtLink :to="link.url" target="_blank" rel="noopener noreferrer">
+            {{ link.name }} </NuxtLink
           ><span v-if="index < links.length - 1">, </span>
         </span>
         {{ $t("home.more") }}
@@ -93,18 +93,10 @@ function changeLocale(event: Event) {
     </div>
     <p>
       {{ $t("home.source_code") }}
-      <a
-        href="https://github.com/nidexingg/nuxt-starter/"
+      <NuxtLink
+        to="https://github.com/nidexingg/nuxt-starter/"
         target="_blank"
-        rel="noopener noreferrer"
-        >GitHub</a
-      >
-      {{ $t("home.download") }}
-      <a
-        href="https://github.com/nidexingg/nuxt-starter/archive/refs/tags/1.0.0.zip"
-        target="_blank"
-        rel="noopener noreferrer"
-        >{{ $t("home.here") }}</a
+        >GitHub</NuxtLink
       >
     </p>
   </div>

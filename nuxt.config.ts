@@ -1,6 +1,9 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  experimental: {
+    payloadExtraction: false,
+  },
   runtimeConfig: {
     public: {}, //declare your public credentials here
     private: {}, //declare your private and sensitive credentials here
@@ -13,12 +16,7 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1.0", // add `maximum-scale=1.0, user-scalable=0` if you don't want user to zoom in/out
       meta: [],
       link: [],
-      script: [
-        {
-          src: "https://cdn.jsdelivr.net/npm/iconify-icon@latest/dist/iconify-icon.min.js",
-          type: "text/javascript",
-        },
-      ],
+      script: [],
       htmlAttrs: {
         lang: "en",
         class: "",
@@ -50,23 +48,28 @@ export default defineNuxtConfig({
   pwa: { 
     // More customs: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference
     registerType: "autoUpdate",
+    includeAssets: ['favicon.ico'],
+    devOptions: {
+      enabled: true,
+      type: 'module',
+    },
+    client: {
+      installPrompt: true,
+    },
+    workbox: {
+      globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+    },
     manifest: {
-      name: "",
-      short_name: "",
-      theme_color: "",
+      name: "my-amazing-app",
+      short_name: "app",
+      description: "my-amazing-app description",
+      theme_color: "#000000",
       start_url: "/",
-      background_color: "",
+      background_color: "#000000",
       display: "standalone",
       scope: "/",
-      description: "",
       icons: [],
       screenshots: [],
-    },
-  },
-  // comment or delete this section if you don't use icon from nidexingg/ui
-  vue: {
-    compilerOptions: {
-      isCustomElement: (tag) => tag === "iconify-icon",
     },
   },
 })
