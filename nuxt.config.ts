@@ -52,6 +52,7 @@ export default defineNuxtConfig({
     devOptions: {
       enabled: true,
       type: 'module',
+      suppressWarnings: true
     },
     client: {
       installPrompt: true,
@@ -68,8 +69,20 @@ export default defineNuxtConfig({
       background_color: "#000000",
       display: "standalone",
       scope: "/",
-      icons: [],
-      screenshots: [],
+      // caveat: The icons and screenshots below are just placeholders. Replace them with your own assets and put them in `/public` dir.
+      icons: [
+        { src: 'https://placehold.co/192x192?text=icon', sizes: '192x192', type: 'image/png' },
+        { src: 'https://placehold.co/512x512?text=icon', sizes: '512x512', type: 'image/png' },
+        { src: 'https://placehold.co/512x512?text=icon', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+      ],
+      screenshots: [
+        { src: 'https://placehold.co/750x1334?text=Example1', sizes: '750x1334', type: 'image/png', form_factor: 'narrow' },
+        { src: 'https://placehold.co/1280x720?text=Example1', sizes: '1280x720', type: 'image/png', form_factor: 'wide' },
+        { src: 'https://placehold.co/750x1334?text=Example2', sizes: '750x1334', type: 'image/png', form_factor: 'narrow' },
+        { src: 'https://placehold.co/1280x720?text=Example2', sizes: '1280x720', type: 'image/png', form_factor: 'wide' },
+        { src: 'https://placehold.co/750x1334?text=Example3', sizes: '750x1334', type: 'image/png', form_factor: 'narrow' },
+        { src: 'https://placehold.co/1280x720?text=Example3', sizes: '1280x720', type: 'image/png', form_factor: 'wide' },
+      ],
     },
   },
 })
