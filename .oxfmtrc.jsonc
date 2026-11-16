@@ -1,0 +1,8 @@
+// in package.json, there are 2 formatter options. You can either use Bun or Oxfmt or use both. Both of which watch this config file and are "ULTRA" fast formatters but Bun is faster according to its claim.
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 80,
+  "sortTailwindcss": true,
+  "sortImports": true,
+  "sortPackageJson": true,
+}

@@ -1,5 +1,10 @@
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
+  devServer: {
+    port: 3000,
+  },
   devtools: { enabled: true },
   experimental: {
     payloadExtraction: false,
@@ -8,7 +13,12 @@ export default defineNuxtConfig({
     public: {}, //declare your public credentials here
     private: {}, //declare your private and sensitive credentials here
   },
-  modules: ['@nuxtjs/tailwindcss', '@vite-pwa/nuxt', '@nuxt/image', '@nuxtjs/i18n', "@nuxtjs/color-mode"],
+  modules: [
+    "@vite-pwa/nuxt",
+    "@nuxt/image",
+    "@nuxtjs/i18n",
+    "@nuxtjs/color-mode",
+  ],
   css: ["~/assets/css/main.css"],
   app: {
     head: {
@@ -29,36 +39,39 @@ export default defineNuxtConfig({
     // pageTransition: {},
     // layoutTransition: {},
   },
+  vite: {
+    plugins: [tailwindcss()],
+  },
   colorMode: {
     classSuffix: "", // optional, prevents adding "-mode" to body class
     preference: "system",
     fallback: "",
   },
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: "en",
     locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'km', name: 'ខេមរភាសា', file: 'km.json' },
-      { code: 'zh', name: '中文', file: 'zh.json' },
-      { code: 'fr', name: 'Francais', file: 'fr.json' },
+      { code: "en", name: "English", file: "en.json" },
+      { code: "km", name: "ខេមរភាសា", file: "km.json" },
+      { code: "zh", name: "中文", file: "zh.json" },
+      { code: "fr", name: "Francais", file: "fr.json" },
     ],
     // Disabling automatic locale detection
     detectBrowserLanguage: false,
   },
-  pwa: { 
+  pwa: {
     // More customs: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference
     registerType: "autoUpdate",
-    includeAssets: ['favicon.ico'],
+    includeAssets: ["favicon.ico"],
     devOptions: {
       enabled: true,
-      type: 'module',
-      suppressWarnings: true
+      type: "module",
+      suppressWarnings: true,
     },
     client: {
       installPrompt: true,
     },
     workbox: {
-      globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
+      globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
     },
     manifest: {
       name: "my-amazing-app",
@@ -71,18 +84,61 @@ export default defineNuxtConfig({
       scope: "/",
       // caveat: The icons and screenshots below are just placeholders. Replace them with your own assets and put them in `/public` dir.
       icons: [
-        { src: 'https://placehold.co/192x192?text=icon', sizes: '192x192', type: 'image/png' },
-        { src: 'https://placehold.co/512x512?text=icon', sizes: '512x512', type: 'image/png' },
-        { src: 'https://placehold.co/512x512?text=icon', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+        {
+          src: "https://placehold.co/192x192?text=icon",
+          sizes: "192x192",
+          type: "image/png",
+        },
+        {
+          src: "https://placehold.co/512x512?text=icon",
+          sizes: "512x512",
+          type: "image/png",
+        },
+        {
+          src: "https://placehold.co/512x512?text=icon",
+          sizes: "512x512",
+          type: "image/png",
+          purpose: "maskable",
+        },
       ],
       screenshots: [
-        { src: 'https://placehold.co/750x1334?text=Example1', sizes: '750x1334', type: 'image/png', form_factor: 'narrow' },
-        { src: 'https://placehold.co/1280x720?text=Example1', sizes: '1280x720', type: 'image/png', form_factor: 'wide' },
-        { src: 'https://placehold.co/750x1334?text=Example2', sizes: '750x1334', type: 'image/png', form_factor: 'narrow' },
-        { src: 'https://placehold.co/1280x720?text=Example2', sizes: '1280x720', type: 'image/png', form_factor: 'wide' },
-        { src: 'https://placehold.co/750x1334?text=Example3', sizes: '750x1334', type: 'image/png', form_factor: 'narrow' },
-        { src: 'https://placehold.co/1280x720?text=Example3', sizes: '1280x720', type: 'image/png', form_factor: 'wide' },
+        {
+          src: "https://placehold.co/750x1334?text=Example1",
+          sizes: "750x1334",
+          type: "image/png",
+          form_factor: "narrow",
+        },
+        {
+          src: "https://placehold.co/1280x720?text=Example1",
+          sizes: "1280x720",
+          type: "image/png",
+          form_factor: "wide",
+        },
+        {
+          src: "https://placehold.co/750x1334?text=Example2",
+          sizes: "750x1334",
+          type: "image/png",
+          form_factor: "narrow",
+        },
+        {
+          src: "https://placehold.co/1280x720?text=Example2",
+          sizes: "1280x720",
+          type: "image/png",
+          form_factor: "wide",
+        },
+        {
+          src: "https://placehold.co/750x1334?text=Example3",
+          sizes: "750x1334",
+          type: "image/png",
+          form_factor: "narrow",
+        },
+        {
+          src: "https://placehold.co/1280x720?text=Example3",
+          sizes: "1280x720",
+          type: "image/png",
+          form_factor: "wide",
+        },
       ],
     },
   },
-})
+});

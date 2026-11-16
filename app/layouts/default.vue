@@ -1,6 +1,6 @@
 <!-- customize your layout here -->
 <template>
-    <div>
-      <slot />
-    </div>
+  <div>
+    <slot />
+  </div>
 </template>

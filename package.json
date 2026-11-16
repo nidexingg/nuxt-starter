@@ -1,45 +1,54 @@
 {
-  "name": "xingnuxt-starter",
-  "version": "1.2.0",
+  "name": "starter",
+  "version": "0.1.0",
+  "private": true,
   "description": "This is a lightweight, starter-friendly and ready to use starter pack for beginner that utilize various of standard technologies such as TailwindCSS with Prettier, Dark mode, Internationalization and PWA supporting out of the box. Made with ❤️ by Nidexingg",
-  "author": "Chandara H. Wei",
-  "license": "MIT",
-  "homepage": "https://xing-nuxt-starter.vercel.app/",
+  "keywords": [
+    "nuxt",
+    "nuxt-color-mode",
+    "nuxt-content",
+    "nuxt-i18n",
+    "starter",
+    "template",
+    "vue"
+  ],
+  "homepage": "https://your-domain.com",
+  "bugs": "https://github.com/nidexingg/nuxt-starter/issues",
+  "license": "Your License",
+  "author": "Your Name",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nidexingg/nuxt-starter.git"
   },
-  "bugs": "https://github.com/nidexingg/nuxt-starter/issues",
-  "keywords": [
-    "template",
-    "starter",
-    "vue",
-    "nuxt",
-    "nuxt-i18n",
-    "nuxt-content",
-    "nuxt-color-mode"
-  ],
-  "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lnt": "oxlint",
+    "lnt:fix": "oxlint --fix",
+    "bunfmt": "bun fmt",
+    "bunfmt:check": "bun fmt --check",
+    "bunlnt": "bun lint",
+    "bunlnt:fix": "bun lint --fix"
   },
   "dependencies": {
-    "@nuxt/image": "^2.1.0",
-    "@nuxtjs/color-mode": "^4.0.1",
+    "@nuxt/image": "^2.2.1",
+    "@nuxtjs/color-mode": "^4.1.0",
     "@nuxtjs/i18n": "^10.6.0",
-    "@nuxtjs/tailwindcss": "6.14.0",
+    "@tailwindcss/vite": "^4.3.5",
     "@vite-pwa/nuxt": "1.1.1",
-    "nuxt": "^4.5.2",
-    "vue": "^3.5.42",
-    "vue-router": "^5.3.1"
+    "nuxt": "^4.6.4",
+    "tailwindcss": "^4.3.5",
+    "vue": "^3.5.45",
+    "vue-router": "^5.4.0"
   },
   "devDependencies": {
-    "prettier": "^3.9.6",
-    "prettier-plugin-tailwindcss": "^0.7.2"
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0"
   }
 }

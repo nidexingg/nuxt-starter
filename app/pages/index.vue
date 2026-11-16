@@ -21,7 +21,7 @@ useSeoMeta({
 </script>
 <template>
   <div>
-    <Template/>
+    <Template />
   </div>
 </template>
 <style scoped></style>

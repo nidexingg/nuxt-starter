@@ -9,7 +9,10 @@ const links = [
   { name: "Nuxt Image", url: "https://image.nuxt.com" },
   { name: "Nuxt Color Mode", url: "https://color-mode.nuxtjs.org" },
   { name: "Nuxt i18n", url: "https://i18n.nuxtjs.org" },
-  { name: "Prettier Plugin", url: "https://prettier.io" },
+  {
+    name: "Oxfmt + Oxlint",
+    url: "https://oxc.rs/docs/guide/introduction.html",
+  },
   { name: "Vite PWA", url: "https://vite-pwa-org.netlify.app" },
 ];
 
@@ -72,7 +75,7 @@ function changeLocale(event: Event) {
       />
       <button
         @click="count++"
-        class="rounded-xl bg-[--foreground] px-3 py-2 text-[--background] transition-all active:scale-[98%]"
+        class="rounded-xl bg-(--foreground) px-3 py-2 text-(--background) transition-all active:scale-[98%]"
       >
         {{ $t("home.clicked") }} {{ count }}
         {{ count === 0 || count === 1 ? $t("home.time") : $t("home.times") }}
@@ -93,15 +96,14 @@ function changeLocale(event: Event) {
     </div>
     <p>
       {{ $t("home.source_code") }}
-      <NuxtLink
-        to="https://github.com/nidexingg/nuxt-starter/"
-        target="_blank"
+      <NuxtLink to="https://github.com/nidexingg/nuxt-starter/" target="_blank"
         >GitHub</NuxtLink
       >
     </p>
   </div>
 </template>
 <style scoped>
+@reference "tailwindcss";
 select {
   @apply my-5 w-full max-w-[100px] border-2 border-[--foreground] bg-[--background] shadow-[4px_4px_0_0] outline-none focus:ring-2 focus:ring-rose-700 sm:text-sm;
 }

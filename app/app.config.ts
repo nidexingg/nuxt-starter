@@ -1,11 +1,11 @@
 //Replace these data with yours
 export default defineAppConfig({
-  title: "Nuxt Starter by Nidexingg",
-  ogTitle: "Nuxt Starter by Nidexingg",
+  title: "Nuxt Starter",
+  ogTitle: "Nuxt Starter",
   description:
-    "This is a lightweight, starter-friendly and ready to use starter pack for beginner that utilize various of standard technologies such as TailwindCSS with Prettier, Dark mode, Internationalization and PWA supporting out of the box. Made with ❤️ by Nidexingg",
+    "This is a lightweight, starter-friendly and ready to use starter pack for beginner that utilize various of standard technologies such as TailwindCSS, Dark mode, Internationalization and PWA supporting out of the box.",
   ogDescription:
-    "This is a lightweight, starter-friendly and ready to use starter pack for beginner that utilize various of standard technologies such as TailwindCSS with Prettier, Dark mode, Internationalization and PWA supporting out of the box. Made with ❤️ by Nidexingg",
+    "This is a lightweight, starter-friendly and ready to use starter pack for beginner that utilize various of standard technologies such as TailwindCSS, Dark mode, Internationalization and PWA supporting out of the box.",
   ogImage: "./og-image.png",
   avatarImage: "",
   email: "",
