@@ -1,8 +1,8 @@
 {
   "name": "starter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "This is a lightweight, starter-friendly and ready to use starter pack for beginner that utilize various of standard technologies such as TailwindCSS with Prettier, Dark mode, Internationalization and PWA supporting out of the box. Made with ❤️ by Nidexingg",
+  "description": "A minimal, good-to-go Nuxt 4 starter preconfigured with modern and essential foundation technologies out of the box. Made with ❤️ by Nidexingg",
   "keywords": [
     "nuxt",
     "nuxt-color-mode",
@@ -37,18 +37,22 @@
     "bunlnt:fix": "bun lint --fix"
   },
   "dependencies": {
+    "@nuxt/icon": "2.6.2",
     "@nuxt/image": "^2.2.1",
     "@nuxtjs/color-mode": "^4.1.0",
     "@nuxtjs/i18n": "^10.6.0",
-    "@tailwindcss/vite": "^4.3.5",
-    "@vite-pwa/nuxt": "1.1.1",
-    "nuxt": "^4.6.4",
-    "tailwindcss": "^4.3.5",
+    "@vueuse/nuxt": "15.1.0",
+    "clsx": "^2.1.1",
+    "nuxt": "^4.7.0",
+    "tailwind-merge": "^3.7.1",
     "vue": "^3.5.45",
     "vue-router": "^5.4.0"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@vite-pwa/nuxt": "1.1.1",
     "oxfmt": "^0.78.0",
-    "oxlint": "^1.93.0"
+    "oxlint": "^1.93.0",
+    "tailwindcss": "^4.3.5"
   }
 }

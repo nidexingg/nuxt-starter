@@ -45,14 +45,16 @@ and 💥 booooom, `http://localhost:3000` should be automatically opened in your
 
 We use:
 
-- `Nuxt`, `Vue`, `Vue Router` as the core technologies of the application.
-- `OXC (Oxfmt + Oxlint)` as the code formatter, linter, and import/class/package sorter.
+- [Nuxt](https://nuxt.com), `Vue`, and `Vue Router` as the core technologies of the application.
+- [TailwindCSS](https://tailwindcss.com), [clsx](https://github.com/lukeed/clsx), and [tailwind-merge](https://github.com/dcastil/tailwind-merge) for utility-first CSS styling and class merging (`cn`).
+- [Nuxt Color Mode](https://color-mode.nuxtjs.org) for light, dark, and sepia theme management.
+- [Nuxt Icon](https://nuxt.com/modules/icon) for icon usage.
+- [Nuxt Image](https://image.nuxt.com) for image optimization, resizing, and format conversion.
+- [Nuxt i18n](https://i18n.nuxtjs.org) for internationalization.
+- [VueUse](https://vueuse.org/) for essential Vue composition utilities.
+- [Vite PWA](https://vite-pwa-org.netlify.app) for generating the service worker, web manifest, and PWA support.
+- [OXC (Oxfmt + Oxlint)](https://oxc.rs/docs/guide/introduction.html) as the code formatter, linter, and import/class/package sorter.
 - `Bun` as the package manager, and secondary option for code formatting and linting.
-- `Nuxt Image` for image optimization, resizing, and format conversion.
-- `Nuxt i18n` for internationalization.
-- `TailwindCSS` for CSS styling.
-- `Nuxt Color Mode` for light/dark/serpia theme management.
-- `Vite PWA Plugin` for generating the service worker, web manifest, and PWA support.
 
 ## 🤝 Contribution
 

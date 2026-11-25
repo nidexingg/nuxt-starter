@@ -6,14 +6,18 @@ const { locales, locale, setLocale } = useI18n();
 const links = [
   { name: "Nuxt", url: "https://nuxt.com" },
   { name: "TailwindCSS", url: "https://tailwindcss.com" },
+  { name: "clsx", url: "https://github.com/lukeed/clsx" },
+  { name: "tailwind-merge", url: "https://github.com/dcastil/tailwind-merge" },
   { name: "Nuxt Image", url: "https://image.nuxt.com" },
   { name: "Nuxt Color Mode", url: "https://color-mode.nuxtjs.org" },
   { name: "Nuxt i18n", url: "https://i18n.nuxtjs.org" },
+  { name: "Nuxt Icon", url: "https://nuxt.com/modules/icon" },
   {
     name: "Oxfmt + Oxlint",
     url: "https://oxc.rs/docs/guide/introduction.html",
   },
   { name: "Vite PWA", url: "https://vite-pwa-org.netlify.app" },
+  { name: "VueUse", url: "https://vueuse.org/" },
 ];
 
 const user = ref();
