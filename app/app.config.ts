@@ -3,9 +3,9 @@ export default defineAppConfig({
   title: "Nuxt Starter",
   ogTitle: "Nuxt Starter",
   description:
-    "This is a lightweight, starter-friendly and ready to use starter pack for beginner that utilize various of standard technologies such as TailwindCSS, Dark mode, Internationalization and PWA supporting out of the box.",
+    "A minimal, good-to-go Nuxt 4 starter preconfigured with modern and essential foundation technologies out of the box. Made with ❤️ by Nidexingg",
   ogDescription:
-    "This is a lightweight, starter-friendly and ready to use starter pack for beginner that utilize various of standard technologies such as TailwindCSS, Dark mode, Internationalization and PWA supporting out of the box.",
+    "A minimal, good-to-go Nuxt 4 starter preconfigured with modern and essential foundation technologies out of the box. Made with ❤️ by Nidexingg",
   ogImage: "./og-image.png",
   avatarImage: "",
   email: "",
@@ -18,6 +18,11 @@ export default defineAppConfig({
     linkedin: "",
     telegram: "",
     facebook: "",
+  },
+  // for nuxt/icon
+  icon: {
+    mode: "css",
+    cssLayer: "base",
   },
   // add more info
 });

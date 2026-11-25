@@ -18,6 +18,8 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/i18n",
     "@nuxtjs/color-mode",
+    "@nuxt/icon",
+    "@vueuse/nuxt",
   ],
   css: ["~/assets/css/main.css"],
   app: {
